@@ -5,4 +5,23 @@
     ul.list-item{
         display: none;
     }
+    .banner-area{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .banner-content h1{
+        font-size: 3rem;
+    }
+   .container{
+    width: 95%;
+   }
+   #club{
+    display: none;
+   }
+   .btn{
+    font-size: 1rem;
+    
+   }
 }
