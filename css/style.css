@@ -35,7 +35,7 @@ a{
     text-decoration: none;
 }
 .btn{
-    padding: 16px 42px;
+    padding: 16px 48px;
     color: var(--color);
     background-color: var(--logo-btn-color);
     border: 1px solid var(--logo-btn-color);
@@ -187,4 +187,55 @@ ul.list-item{
     height: 50px;
     border-radius: 50%;
     background-color: var(--logo-btn-color);
+}
+
+/* main habit area */
+
+.main-area{
+    background-color: var(--background-color);
+    width: 100%;
+}
+.habit-title{
+    text-align: center;
+    padding: 100px 0;
+}
+.card-area{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-self: center;
+    gap: 20px;
+}
+.card img{
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.card{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.card h3{
+    color: var(--color);
+}
+.run-exercise-section{
+
+}
+.run-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+}
+.run-title{
+    width: 80%;
+}
+.run-title h2{
+    font-size: 3.2rem;
+}
+.run-title p{
+    padding: 20px 0;
+}
+.run-image img{
+    border-radius: 10px;
 }

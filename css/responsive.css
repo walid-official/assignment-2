@@ -22,6 +22,15 @@
    }
    .btn{
     font-size: 1rem;
-    
+    padding: 16px 42px;
    }
+}
+
+@media screen and (max-width: 567px) {
+    .run-container{
+        grid-template-columns: 1fr;
+    }
+    .card-area{
+        grid-template-columns: 1fr;
+    }
 }
