@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama'); 
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +17,8 @@
 }
 body{
     font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+    width: 100%;
 }
 img{
     max-width: 100%;
@@ -43,6 +45,7 @@ a{
     border-radius: 30px;
     font-size: 1.2rem;
     font-weight: 500;
+    margin: 20px 0;
 }
 .flex-area{
     display: flex;
@@ -53,14 +56,12 @@ a{
 }
 /* Header Navber Area Start */
 .header-area{
-    background-image: var(--header-bg);
-    background-color: rgba(0, 0, 0,0.7);
+    background-image: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(185, 185, 185,0.2),rgb(17, 17, 17) 100%);
     width: 100%;
-    
 }
 .navber-area{
     justify-content: space-between;
-    padding: 35px 0;
+    padding: 42px 0;
 }
 .nav-logo a{
     color: var(--logo-btn-color);
@@ -69,26 +70,24 @@ a{
 }
 ul.list-item{
     gap: 30px;
-    padding: 20px 0;
+    border: 1px solid var(--card-footer-color);
+    border-radius: 30px;
 }
 .list-item li{
     list-style: none;
 }
 .list-item li a{
-    padding: 0 30px;
     color: var(--color);
-    transition: ease-in-out .5s;
+    padding: 12px 25px;
+    display: block;
+    border-radius: 25px;
+    transition: all .5s;
 }
 .list-item li a:hover{
     background-color: var(--logo-btn-color);
-    padding: 10px 30px;
-    border-radius: 20px;
-    transition: ease-in-out .5s;
 }
 #active{
     background-color: var(--logo-btn-color);
-    padding: 10px 30px;
-    border-radius: 20px;
 }
 .bar-area{
     display: none;
@@ -100,25 +99,32 @@ ul.list-item{
 }
 /* nav section End */
 .banner-area{
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 30px;
-    position: relative;
 }
 .banner-content{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .banner-content h1{
     font-size: 4.8rem;
+    font-weight: 800;
     color: var(--color);
-    line-height: normal;
+    line-height: 75px;
+    width: 90%;
 }
-.banner-content h1 span{
-    font-family: "Dancing Script", cursive;
+.banner-content h1 #ch-font{
+    font-family: 'Miama', sans-serif;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 7.2rem;
+    position: static;
 }
 .banner-content p{
-    margin: 20px 0;
+    margin: 40px 0 20px;
+}
+#space-top{
+    line-height: 50px;
+    display: block;
 }
 .banner-info-image{
     background-image: url('../images/Images\ 2.png');
@@ -131,70 +137,59 @@ ul.list-item{
     background-color: transparent;
     color: var(--color);
     border: 1px solid var(--color);
-    transition: ease-in-out  .5s;
+    transition:  .5s;
+    margin-left: 10px;
 }
 .download-btn:hover{
     background-color: var(--logo-btn-color);
     border-color: var(--logo-btn-color);
-    transition: ease-in-out  .5s;
+    transition:  .5s;
 }
-.work-out-video{
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
-    /* position: absolute; */
-   
-}
-.workout{
-    backdrop-filter: blur(20px);
+.workout,.video{
+    backdrop-filter: blur(15px);
     background-color: var(--card-footer-color);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 20px 30px;
+    padding: 16px 20px;
     border-radius: 20px;
-    margin-right: 30px;
-    margin-top: 100px;
+    display: inline-block;
 }
-.video-tutorial{
-    margin-top: 200px;
-    
+.banner-button{
+    position: relative;
 }
-.video-tutorial h3{
-    font-size: 2.3rem;
-    color: var(--color);
+.workout{
+    position: absolute;
+    top: 150px;
+    right: 50px;
 }
-
-
-/* .video-area{
+.video{
+    position: absolute;
+    top: 430px;
+    left: 0;
     display: flex;
     align-items: center;
-    gap: 15px;
-} 
-.video-area::before{
-    
-} */
-.video-area{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    /* width: 30%;
-    padding: 20px 25px;
-    backdrop-filter: blur(20px);
-    background-color: var(--card-footer-color);
-    border: 2px solid rgba(255, 255, 255, 0.3); */
 }
 #circle{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: var(--logo-btn-color);
+    margin-right: 10px;
 }
-
+.workout h2{
+    font-size: 2.2rem;
+}
+.workout p{
+    line-height: normal;
+}
+.video span#point{
+    color: var(--color);
+    font-size: 1.3rem;
+}
+.video #para-color{
+    color: var(--paragraph-color);
+    font-weight: 400;
+}
 /* main habit area */
-
-.main-area{
-    background-color: var(--background-color);
-    width: 100%;
-}
 .habit-title{
     text-align: center;
     padding: 100px 0;
@@ -202,12 +197,15 @@ ul.list-item{
 .card-area{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    justify-self: center;
+    justify-content: space-between;
     gap: 20px;
 }
 .card img{
     border-radius: 50%;
-    padding-bottom: 20px;
+    border: 1px solid var(--paragraph-color);
+}
+.card h3{
+    margin-top: 20px;
 }
 .card{
     display: grid;
@@ -218,14 +216,18 @@ ul.list-item{
 .card h3{
     color: var(--color);
 }
+/* Habit Area End */
 .run-exercise-section{
-
+    
 }
 .run-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     align-items: center;
+    background-color: var(--section-bg);
+    padding: 40px;
+    border-radius: 20px;
 }
 .run-title{
     width: 80%;
@@ -239,3 +241,98 @@ ul.list-item{
 .run-image img{
     border-radius: 10px;
 }
+/* BMI Calcluter */
+.clac-title-container{
+    padding: 80px 0;
+    width: 40%;
+    margin: 0 auto;
+}
+table{
+    color: var(--color);
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table tr,td,th{
+    border: 1px solid #333;
+    padding: 20px 15px;
+}
+table td{
+    color: var(--paragraph-color)
+}
+table th{
+    text-align: left;
+}
+.calclution-container{
+    background-color: var(--section-bg);
+    padding: 80px 0;
+}
+.calclution-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.calclution-content h3{
+    color: var(--color);
+    padding-bottom: 40px;
+    font-size: 1.8rem;
+}
+.calculation-btn button{
+    margin-top: 0px;
+}
+form{
+    margin-top: 40px;
+}
+form input{
+    display: block;
+    padding: 20px 20px;
+    width: 50%;
+    background-color: #333;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+form .height-weight, .age-sex{
+    gap: 20px;
+}
+form .age-sex select{
+    width: 50%;
+}
+form .age-sex {
+    margin: 20px 0;
+    position: relative;
+}
+form .selection-activity{
+    margin-bottom: 20px;
+}
+form .selection-activity select{
+    width: 100%;
+}
+form .selection-activity{
+    position: relative;
+}
+.select-style{
+    padding: 20px 20px;
+    background-color: #333;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(112,112,112);
+    padding-right: 20px;
+}
+select{
+    padding-right: 20px; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.fas{
+    color: var(--paragraph-color);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+input:focus{
+    color: var(--color);
+}
+
+/* calclution section End */
+

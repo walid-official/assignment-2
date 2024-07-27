@@ -8,29 +8,83 @@
     .banner-area{
         flex-direction: column;
     }
-    
+    .calclution-content{
+        grid-template-columns: 1fr;
+    } 
+   .banner-area{
+        grid-template-columns: 1fr;
+   }
+   .banner-content{
+     margin-top: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
     .banner-content h1{
         font-size: 3rem;
     }
-   .container{
-    width: 95%;
-   }
-   #club{
-    display: none;
-   }
-   .btn{
-    font-size: 1rem;
-    padding: 16px 42px;
-   }
+    .container{
+        width: 90%;
+    }
+    #club{
+        display: none;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 16px 42px;
+    }
+    .team-area{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media screen and (max-width: 567px) {
-    .run-container{
+    .run-container,.card-area,.team-area,.footer-area{
         grid-template-columns: 1fr;
     }
-    .card-area{
-        grid-template-columns: 1fr;
+    .logo-footer{
+        width: 100%;
+    }
+    .banner-info-image{
+        background-position: left bottom;
+    }
+    .banner-content h1{
+        width: 100%;
+    }
+    
+    .btn{
+        padding: 16px 20px;
+    }
+    .calculation-btn button{
+        padding: 16px 35px;
+        width: 80%;
+    }
+    .workout{
+        right: 0;
+        top: 200px;
+    }
+    .workout h2{
+        font-size: 1.6rem;
+    }
+    .run-title{
+        width: 100%;
+    }
+    .btn-experiance{
+        width: 100%;
+    }
+    .card{
+        padding-bottom: 50px;
+    }
+   
+    .team-area{
+        padding: 20px;
+    }
+    .team-member-1{
+        display: none;
+    }
+    .team-member-4{
+        display: none;
+    }
+    .download-btn{
+        margin-left: 5px;
     }
 }

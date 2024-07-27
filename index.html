@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawsome js cdn -->
+    <script src="https://kit.fontawesome.com/afbccaeff7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-area">
         <nav class="navber-area flex-area container">
             <div class="nav-logo">
-                <a href="#">Fitness</a>
+                <a href="#">Muscle</a>
             </div>
             <div class="link-area">
                 <ul class="list-item flex-area">
@@ -30,9 +32,9 @@
             </div>
         </nav>
         <!-- Navber section is done -->
-         <div class="banner-area container flex-area">
+         <div class="banner-area container">
             <div class="banner-content">
-                <h1>Get body in <span>shape</span> & stay healthy</h1>
+                <h1>Get body in <span id="ch-font">shape</span> & stay <span id="space-top">healthy</span></h1>
                 <p> A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
                 <div class="btn-area">
                     <button class="btn">Join <span id="club">Club</span> Now!</button>
@@ -40,24 +42,17 @@
                 </div>
             </div>
            <div class="banner-info-image">
-                <div class="work-out-video">
+               <div class="banner-button"> 
                     <div class="workout">
-                         <h2>500+</h2>
-                        <p>Free Workout Videos</p>
+                        <h2>500+</h2><p>Free Workout Videos</p>
+                    </div><br>
+                    <div class="video">
+                        <div id="circle"></div>
+                        <span id="point">300+ <br> <small id="para-color">Video tutorials</small></span>
                     </div>
-                </div>
-                    <div class="video-tutorial">
-                        <div class="video-area">
-                            <div id="circle"></div>
-                            <div class="video-content">
-                                <h3>350+</h3>
-                                <p>Video Tutorial</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               </div>
            </div>
-         </div>
+        </div>
         <!-- Banner Section End -->
     </header>
     <main class="main-area">
@@ -95,14 +90,79 @@
                 <div class="run-title">
                     <h2>Run an Extra <br> Mile Easily</h2>
                     <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                    <button class="btn">Join Now</button>
+                    <button class="btn btn-experiance">Join Now</button>
                 </div>
                 <div class="run-image">
                     <img src="images/running.jpg" alt="run-image">
                 </div>
             </div>
         </section>  <!-- run exercise section End -->
-       
-    </main>
+       <section class="bmi-calcluter">
+            <div class="clac-title-container container">
+                <h2>BMI Calculator</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="calclution-container ">
+                <div class="calclution-content container">
+                    <div class="calclution-table">
+                        <h3>BMI Calculator Chart</h3>
+                        <div class="table-section">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="bmi">BMI</th>
+                                        <th>Weight-Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Below 18.5</td>
+                                        <td>Underweight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.5 - 24.9</td>
+                                        <td>Healthy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25.0 - 29.9</td>
+                                        <td>Overweight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30.0 - and Above</td>
+                                        <td>Obese</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="calclution-input">
+                        <div class="input-title">
+                            <h3>Calculate your BMI</h3>
+                            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        </div>
+                       <form action="">
+                            <div class="height-weight flex-area">
+                                <input type="text" placeholder="Height/cm">
+                                <input type="text" placeholder="Weight/kg">
+                            </div>
+                            <div class="age-sex flex-area">
+                                <input type="text" placeholder="Age">
+                                <select class="select-style">
+                                    <option value="">sex</option>
+                                </select><i style='font-size:24px' class='fas'>&#xf107;</i>
+                            </div>
+                            <div class="selection-activity flex-area">
+                                <select class="select-style">
+                                    <option class="select-style" value="">Select an activity factor</option>
+                                </select><i style='font-size:24px' class='fas'>&#xf107;</i>
+                            </div>
+                            <div class="calculation-btn">
+                                <button class="btn">Calculate</button>
+                            </div>
+                       </form>
+                    </div>
+                </div>
+            </div>
+       </section>  <!-- calculation area end -->
 </body>
 </html>
