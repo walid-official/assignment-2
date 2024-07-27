@@ -375,3 +375,53 @@ input:focus{
     color: var(--color);
 }
 /* Team Area End */
+.footer-section{
+    background-color: var(--card-footer-color);
+    padding: 60px 0;
+}
+.footer-area{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    gap: 30px;
+}
+.logo-footer{
+    width: 60%;
+}
+.logo-footer h2{
+    font-style: italic;
+    color: var(--logo-btn-color);
+}
+.getting-start h3{
+    font-size: 1.5rem;
+    color: var(--color);
+}
+.get-items a{
+    display: block;
+    color: var(--paragraph-color);
+    padding: 10px 0;
+}
+.contact-area h3{
+    font-size: 1.5rem;
+    color: var(--color);
+}
+.contact-item i{
+    color: var(--paragraph-color);
+    padding: 10px 0;
+    margin-right: 10px;
+}
+.contact-item a{
+    color: var(--paragraph-color);
+}
+.footer-writer{
+    padding-top: 150px;
+}
+hr{
+    border: 1px solid var(--paragraph-color);
+}
+.footer-writer p small{
+    color: var(--paragraph-color);
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+}
