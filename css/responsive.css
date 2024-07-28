@@ -11,7 +11,7 @@
     .calclution-content{
         grid-template-columns: 1fr;
     } 
-   .banner-area{
+   .banner-area,.body-scale-container{
         grid-template-columns: 1fr;
    }
    .banner-content{
@@ -34,6 +34,9 @@
     }
     .team-area{
         grid-template-columns: repeat(2,1fr);
+    }
+    .body-scale-content p{
+        width: 100%;
     }
 }
 
