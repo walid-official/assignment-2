@@ -40,12 +40,13 @@ a{
     padding: 16px 48px;
     color: var(--color);
     background-color: var(--logo-btn-color);
-    border: 1px solid var(--logo-btn-color);
+    border: 2px solid var(--logo-btn-color);
     cursor: pointer;
     border-radius: 30px;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 20px 0;
+    transition: ease-in-out .5s;
 }
 .flex-area{
     display: flex;
@@ -72,6 +73,7 @@ ul.list-item{
     gap: 30px;
     border: 1px solid var(--card-footer-color);
     border-radius: 30px;
+    padding: 5px;
 }
 .list-item li{
     list-style: none;
@@ -84,9 +86,6 @@ ul.list-item{
     transition: all .5s;
 }
 .list-item li a:hover{
-    background-color: var(--logo-btn-color);
-}
-#active{
     background-color: var(--logo-btn-color);
 }
 .bar-area{
@@ -116,15 +115,13 @@ ul.list-item{
 .banner-content h1 #ch-font{
     font-family: 'Miama', sans-serif;
     font-weight: 400;
-    font-size: 7.2rem;
-    position: static;
+    font-size: 7.3rem;
 }
 .banner-content p{
     margin: 40px 0 20px;
 }
 #space-top{
     line-height: 50px;
-    display: block;
 }
 .banner-info-image{
     background-image: url('../images/Images\ 2.png');
@@ -132,18 +129,21 @@ ul.list-item{
     width: 100%;
     min-height: 600px;
     background-position: center bottom;
+    position: relative;
 }
 .download-btn{
     background-color: transparent;
     color: var(--color);
     border: 1px solid var(--color);
     transition:  .5s;
-    margin-left: 10px;
 }
 .download-btn:hover{
     background-color: var(--logo-btn-color);
     border-color: var(--logo-btn-color);
     transition:  .5s;
+}
+.m-space{
+    margin-left: 10px;
 }
 .workout,.video{
     backdrop-filter: blur(15px);
@@ -152,9 +152,6 @@ ul.list-item{
     padding: 16px 20px;
     border-radius: 20px;
     display: inline-block;
-}
-.banner-button{
-    position: relative;
 }
 .workout{
     position: absolute;
@@ -216,17 +213,14 @@ ul.list-item{
 .card h3{
     color: var(--color);
 }
+
 /* Habit Area End */
-.run-exercise-section{
-    
-}
 .run-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     align-items: center;
     background-color: var(--section-bg);
-    /* */
     padding: 40px;
     border-radius: 20px;
 }
@@ -238,6 +232,11 @@ ul.list-item{
 }
 .run-title p{
     padding: 20px 0;
+}
+.run-title button:hover{
+    background-color: transparent;
+    color: var(--logo-btn-color);
+    transition: ease-in-out .5s;
 }
 .run-image img{
     border-radius: 10px;
@@ -262,6 +261,11 @@ ul.list-item{
 .body-scale-content p{
     margin: 20px 0;
     width: 90%;
+}
+.body-scale-content button:hover{
+    background-color: transparent;
+    color: var(--logo-btn-color);
+    transition: ease-in-out .5s;
 }
 .accuracy-bg{
     background-color: var(--color);
@@ -340,6 +344,12 @@ table th{
 }
 .calculation-btn button{
     margin-top: 0px;
+    padding: 16px 52px;
+}
+.calculation-btn button:hover{
+    background-color: transparent;
+    color: var(--logo-btn-color);
+    transition: ease-in-out .5s;
 }
 form{
     margin-top: 40px;
@@ -352,6 +362,12 @@ form input{
     border-radius: 10px;
     border: none;
     font-size: 1.2rem;
+}
+form input:focus{
+    border: 2px solid var(--logo-btn-color);
+}
+form input:focus{
+    color: var(--color);
 }
 form .height-weight, .age-sex{
     gap: 20px;
@@ -393,10 +409,13 @@ select{
     right: 20px;
     top: 20px;
 }
-input:focus{
-    color: var(--color);
+form .select-style:focus{
+    border: 2px solid var(--logo-btn-color);
+    outline: none;
 }
-
+.lab-position{
+    color:#fff
+}
 /* calclution section End */
 
 .team-section{
