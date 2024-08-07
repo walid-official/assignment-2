@@ -14,6 +14,24 @@
     .run-container,.banner-area,.body-scale-container{
         grid-template-columns: 1fr;
    }
+    #practice-muscle1{
+        grid-column: span 9;
+    }
+    #practice-muscle2{
+        grid-column: span 9;
+    }
+    #practice-muscle3{
+        grid-column: span 9;
+    }
+    #practice-muscle4{
+        grid-column: span 9;
+    }
+    #practice-muscle5{
+        grid-column: span 9;
+    }
+    #practice-muscle6{
+        grid-column: span 9;
+    }
 }
 @media screen and (max-width: 768px) {
     .banner-content h1{

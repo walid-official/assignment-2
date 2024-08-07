@@ -272,7 +272,6 @@ ul.list-item{
 #practice-muscle6{
     grid-column: span 3;
 }
-
 #practice-muscle1 .overlay{
     background: rgba(6, 255, 210, 0.5)
 }
@@ -322,9 +321,8 @@ ul.list-item{
     top: 20px;
 }
 #practice-muscle4 .overlay p{
-    right: 20px;
-    top: 0;
-    
+    left: 50%;
+    top: 20px;
     width: 40%;
 }
 .training-image img{
