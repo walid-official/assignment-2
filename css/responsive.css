@@ -11,12 +11,9 @@
     .calclution-content{
         grid-template-columns: 1fr;
     } 
-   .banner-area,.body-scale-container{
+    .run-container,.banner-area,.body-scale-container{
         grid-template-columns: 1fr;
    }
-   .banner-content{
-     margin-top: 20px;
-    }
 }
 @media screen and (max-width: 768px) {
     .banner-content h1{
@@ -41,9 +38,10 @@
 }
 
 @media screen and (max-width: 567px) {
-    .run-container,.card-area,.team-area,.footer-area{
+    .card-area,.team-area,.footer-area{
         grid-template-columns: 1fr;
     }
+
     .logo-footer{
         width: 100%;
     }
@@ -74,6 +72,9 @@
     .run-title{
         width: 100%;
     }
+    .run-title h2{
+        font-size: 2.9rem;
+    }
     .btn-experiance{
         width: 100%;
     }
@@ -92,4 +93,6 @@
     .download-btn{
         margin-left: 5px;
     }
+   
+   
 }
