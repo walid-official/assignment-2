@@ -126,7 +126,8 @@ ul.list-item{
 .banner-info-image{
     background-image: url('../images/Images\ 2.png');
     background-repeat: no-repeat;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     min-height: 600px;
     background-position: center bottom;
     position: relative;
@@ -146,21 +147,20 @@ ul.list-item{
     margin-left: 10px;
 }
 .workout,.video{
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     background-color: var(--card-footer-color);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 16px 20px;
-    border-radius: 20px;
-    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 13px 18px;
+    border-radius: 10px;
 }
 .workout{
     position: absolute;
     top: 150px;
-    right: 50px;
+    right: 0;
 }
 .video{
     position: absolute;
-    top: 430px;
+    top: 450px;
     left: 0;
     display: flex;
     align-items: center;
@@ -173,18 +173,22 @@ ul.list-item{
     margin-right: 10px;
 }
 .workout h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 .workout p{
     line-height: normal;
+    font-size: 14px;
 }
 .video span#point{
     color: var(--color);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: normal;
+    font-weight: bold;
 }
 .video #para-color{
     color: var(--paragraph-color);
     font-weight: 400;
+    font-size: 14px;
 }
 /* main habit area */
 .habit-title{
@@ -433,7 +437,7 @@ table th{
 }
 .calculation-btn button{
     margin-top: 0px;
-    padding: 16px 52px;
+    padding: 14px 60px;
 }
 .calculation-btn button:hover{
     background-color: transparent;
@@ -583,9 +587,11 @@ form .select-style:focus{
     color: var(--paragraph-color);
     padding: 10px 0;
     margin-right: 10px;
+    margin-top: 5px;
 }
 .contact-item a{
     color: var(--paragraph-color);
+    margin-top: 5px;
 }
 .footer-writer{
     padding-top: 150px;
