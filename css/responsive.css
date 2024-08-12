@@ -11,7 +11,7 @@
     .calclution-content{
         grid-template-columns: 1fr;
     } 
-    .run-container,.banner-area,.body-scale-container{
+    .run-container,.banner-area,.body-scale-container,.calculation-content{
         grid-template-columns: 1fr;
    }
     #practice-muscle1{
