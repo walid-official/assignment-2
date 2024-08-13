@@ -244,6 +244,7 @@ ul.list-item{
 }
 .run-image img{
     border-radius: 10px;
+    width: 100%;
 }
 
 /* Run section is end */
