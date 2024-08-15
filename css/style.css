@@ -136,11 +136,20 @@ ul.list-item{
     background-color: transparent;
     color: var(--color);
     border: 1px solid var(--color);
-    transition:  .5s;
 }
 .download-btn:hover{
     background-color: var(--logo-btn-color);
     border-color: var(--logo-btn-color);
+    transition:  .5s;
+}
+.join-btn{
+    background-color: var(--logo-btn-color);
+    border: 1px solid var(--logo-btn-color);
+}
+.join-btn:hover{
+    background-color: transparent;
+    color: var(--color);
+    border: 1px solid var(--color);
     transition:  .5s;
 }
 .m-space{
